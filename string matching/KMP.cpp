@@ -11,6 +11,11 @@ vector<int> getLps(string& pat){
     int i = 1;
     int j = 0;
     vector<int> ans;
+
+    if(n == 0){
+        return ans;
+    }
+
     ans.push_back(0); // this is because for the starting element definition wise
 
     while(i<n){
